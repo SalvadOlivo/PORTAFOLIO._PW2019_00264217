@@ -8,7 +8,7 @@ h1{
 
 }
 
-.container{
+.log{
     display: grid;
     justify-content: center;
     grid-template: repeat(7, 120px) / repeat(7,120px);
@@ -21,6 +21,7 @@ img{
     object-fit: cover;
 
 }
+
 
 #span1{
      grid-column: 1/8;
@@ -70,5 +71,13 @@ img{
 #span14{
     grid-column: 4/8;
      grid-row: 6/8;
+    }
+#span15{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
 
+#span16{
+    grid-column: 6/8;
+    grid-row: 4/5;
 }
