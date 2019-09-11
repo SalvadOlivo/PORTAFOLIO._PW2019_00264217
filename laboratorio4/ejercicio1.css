@@ -1,0 +1,101 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  width: 0vh;
+  padding: 1em 5%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/06/13/18/background-2721423_960_720.jpg");
+  background-size: cover;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Btn,
+.Btn2,
+.Btn3 {
+  background-color: white;
+  color: black;
+  margin: 0.5em;
+  padding: 0.8em;
+}
+
+.Btn:hover,
+.Btn2:hover,
+.Btn3:hover {
+  opacity: 0.7;
+}
+
+main {
+  height: auto;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .log {
+  height: auto;
+  width: 100%;
+}
+
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 5em;
+  width: 5em;
+  margin: 0.5em;
+  border-radius: 100%;
+  background: whitesmoke;
+  border: 1px solid black;
+  opacity: 0.7%;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=ejercicio1.css.map */

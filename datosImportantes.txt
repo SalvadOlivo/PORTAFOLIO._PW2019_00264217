@@ -1,0 +1,20 @@
+en sas puedes crear variables con "$" al principio
+
+puedes crear funciones con "@mixin "nombre_de_funcion"
+
+para llamar la funcion "@include "nombre_de_funcion" 
+
+pudes hacer if "@if(sentencia )"
+
+para poder hover
+
+ .clase{
+
+ &:hover{
+tu_madre.txt
+}
+}
+
+
+modular css crear una carpeta para variables "nombre.scss" y luego para utilizarlas en tu archivo .scss usar import 
+"@import "variables";
