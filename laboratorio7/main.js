@@ -1,14 +1,14 @@
 let carnet_field = document.querySelector('#carnet_field')
-let schedule_dropdown = document.querySelector('#shedule_field')
+let schedule_dropdown = document.querySelector('#schedule_field')
 let late_switch = document.querySelector('#late_switch')
 let submit_btn = document.querySelector('#submit_btn')
 
 let table_body = document.querySelector('#table_body')
-let carnet_regex = new RegExp("[0-9{8}]") //valida que el carnet tenga 8 caracteres
+let carnet_regex = new RegExp("[0-9]{8}") //valida que el carnet tenga 8 caracteres
 
 let addStudent = (carnet, schedule, late)=>{
     let new_row = document.createElement("tr")
-    let datetime = new datetime()
+    let datetime = new Date()
 
     new_row.className = 'table-activate'
     new_row.innerHTML=
@@ -24,9 +24,9 @@ let addStudent = (carnet, schedule, late)=>{
 
     let parseLateSwitch = (value)=>{
         if(value){
-            return 'Se tardo el puto'
+            return 'Se tardo'
         }
-        return "llego vergon"
+        return "llego a tiempo"
 
     }
 
@@ -39,14 +39,14 @@ let addStudent = (carnet, schedule, late)=>{
             addStudent(carnet, schedule, late)
 
         }else{
-            alert('formato de carnet no valido, puto!')
+            alert('formato de carnet no valido')
 
   
         }
 
 })
 
-canert_field-addEventListener('keyup', (event)=>{
+carnet_field-addEventListener('keyup', (event)=>{
     let keyCode = event.keyCode
     let carnet = carnet_field.value
 
@@ -54,9 +54,9 @@ canert_field-addEventListener('keyup', (event)=>{
         submit_btn.click()
     }
     if(carnet_regex.test(carnet)){
-        submit_btn.disable = false
+        submit_btn.disabled = false
     }else{
-        submit_btn.disable = true
+        submit_btn.disabled = true
 
     }
 
